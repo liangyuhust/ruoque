@@ -69,8 +69,14 @@ public class StaffLoginController {
             return null;
         }
     }
-	
-	@RequestMapping(value="/reg",method=RequestMethod.GET)
+
+	/**
+	 *
+	 * @param staff
+	 *
+	 * @return
+	 */
+	@RequestMapping(value="/reg",method=RequestMethod.POST)
 	@ResponseBody
 	public Status reg(@ModelAttribute("staff") Staff staff){
 		String salt=getRandomString(5);

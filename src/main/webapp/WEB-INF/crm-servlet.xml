@@ -15,22 +15,42 @@
 
    <context:component-scan base-package="ruoque.crm"/>
    <!-- 开启注解 -->  
-   <mvc:annotation-driven /> 
-   
-   <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource"
-        destroy-method="close">
-        <property name="url" value="jdbc:mysql://localhost:3306/ruoque_crm?useUnicode=true&amp;characterEncoding=utf-8" />
-        <property name="username" value="root" />
-        <property name="password" value="" />
-        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-   </bean>
+   <mvc:annotation-driven />
+    <!-- 异常转换-->
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath*:jdbc.properties</value>
+                <value>classpath*:bcm-monitor-config.properties</value>
+            </list>
+        </property>
+        <property name="ignoreResourceNotFound" value="false"/>
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+    </bean>
+
+
+
+    <!-- 定义数据源DataSource-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxActive" value="100"/>
+        <property name="maxWait" value="1000"/>
+        <property name="poolPreparedStatements" value="true"/>
+        <property name="defaultAutoCommit" value="true"/>
+        <property name="timeBetweenEvictionRunsMillis" value="600000"/>
+    </bean>
 
    <bean id="sessionFactory"
         class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-        <property name="dataSource" ref="datasource" />
+        <property name="dataSource" ref="dataSource" />
         <property name="hibernateProperties">
              <props>
-                  <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                  <prop key="hibernate.dialect">${jdbc.dialect}</prop>
                   <prop key="hibernate.show_sql">true</prop>
                   <prop key="hibernate.hbm2ddl.auto">update</prop>
                   <prop key="hibernate.format_sql">true</prop>
