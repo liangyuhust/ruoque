@@ -789,6 +789,21 @@
                             <div><br/></div>
                             <div class="tab-content">
                                 <div id="mySaleContractTable" class="tab-pane table-responsive active">
+                                    <div class="pull-right">
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="visitDate">来访日期</label>
+                                                <input type="email" class="form-control" id="visitDate"
+                                                       placeholder="来访日期">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="clientName">顾客姓名</label>
+                                                <input type="password" class="form-control" id="clientName"
+                                                       placeholder="顾客姓名">
+                                            </div>
+                                            <button type="submit" class="btn btn-default">查询</button>
+                                        </form>
+                                    </div>
                                     <table class="table table-hover table-condensed ">
                                         <thead>
                                         <tr>
@@ -893,6 +908,21 @@
                                 <li class="active"><a href="#">来人信息统计</a></li>
                             </ol>
                             <div class="table-responsive">
+                                <div class="pull-right">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="visitDate">来访日期</label>
+                                            <input type="email" class="form-control" id="visitDate"
+                                                   placeholder="来访日期">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="clientName">顾客姓名</label>
+                                            <input type="password" class="form-control" id="clientName"
+                                                   placeholder="顾客姓名">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">查询</button>
+                                    </form>
+                                </div>
                                 <table class="table table-hover table-condensed ">
                                     <thead>
                                     <tr>
@@ -916,6 +946,21 @@
                                 <li class="active"><a href="#">来电信息统计</a></li>
                             </ol>
                             <div class="table-responsive">
+                                <div class="pull-right">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="visitDate">来访日期</label>
+                                            <input type="email" class="form-control" id="visitDate"
+                                                   placeholder="来访日期">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="clientName">顾客姓名</label>
+                                            <input type="password" class="form-control" id="clientName"
+                                                   placeholder="顾客姓名">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">查询</button>
+                                    </form>
+                                </div>
                                 <table class="table table-hover table-condensed ">
                                     <thead>
                                     <tr>
@@ -976,6 +1021,21 @@
                                 <li class="active"><a href="#">合同信息统计</a></li>
                             </ol>
                             <div class="table-responsive">
+                                <div class="pull-right">
+                                    <form class="form-inline">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="visitDate">来访日期</label>
+                                            <input type="email" class="form-control" id="visitDate"
+                                                   placeholder="来访日期">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="clientName">顾客姓名</label>
+                                            <input type="password" class="form-control" id="clientName"
+                                                   placeholder="顾客姓名">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">查询</button>
+                                    </form>
+                                </div>
                                 <table class="table table-hover table-condensed ">
                                     <thead>
                                     <tr>
@@ -1302,6 +1362,21 @@
                             <div><br/></div>
                             <div class="tab-content">
                                 <div id="myRoleTable" class="tab-pane table-responsive active">
+                                    <div class="pull-right">
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="visitDate">来访日期</label>
+                                                <input type="email" class="form-control" id="visitDate"
+                                                       placeholder="来访日期">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="clientName">顾客姓名</label>
+                                                <input type="password" class="form-control" id="clientName"
+                                                       placeholder="顾客姓名">
+                                            </div>
+                                            <button type="submit" class="btn btn-default">查询</button>
+                                        </form>
+                                    </div>
                                     <table class="table table-hover table-condensed ">
                                         <thead>
                                         <tr>
