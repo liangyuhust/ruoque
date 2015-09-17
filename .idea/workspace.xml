@@ -1,77 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de7a7793-ddad-4882-8c96-102186d6694f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/jh.estate/ruoque/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/jh.estate/ruoque/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/showWorkBench_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/jsp/showWorkBench_jsp.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Call.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Call.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/CallController.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/CallController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/CallDao.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/CallDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/CallDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/CallDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/CallManager.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/CallManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/CallManagerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/CallManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Comer.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Comer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/type/ComerCategory.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/type/ComerCategory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/ComerController.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/ComerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/ComerDao.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/ComerDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/ComerDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/ComerDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/ComerManager.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/ComerManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/ComerManagerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/ComerManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/type/ComerType.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/type/ComerType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Department.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Department.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/DepartmentController.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/DepartmentController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/DepartmentDao.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/DepartmentDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/DepartmentDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/DepartmentDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/DepartmentManager.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/DepartmentManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/DepartmentManagerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/DepartmentManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/type/Gender.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/type/Gender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/interceptor/LoginFilter.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/interceptor/LoginFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/type/MaritalStatus.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/type/MaritalStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/util/Pager.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/util/Pager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/type/Period.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/type/Period.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/util/Result.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/util/Result.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Role.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Role.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/RoleController.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/RoleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/RoleDao.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/RoleDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/RoleDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/RoleDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/RoleManager.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/RoleManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/RoleManagerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/RoleManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/model/SaleContract.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/model/SaleContract.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/SaleContractController.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/SaleContractController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/SaleContractDao.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/SaleContractDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/SaleContractDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/SaleContractDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/SaleContractManager.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/SaleContractManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/SaleContractManagerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/SaleContractManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/model/SaleOrder.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/model/SaleOrder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/SaleOrderController.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/SaleOrderController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/SaleOrderDao.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/SaleOrderDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/SaleOrderDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/SaleOrderDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/SaleOrderManager.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/SaleOrderManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/SaleOrderManagerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/SaleOrderManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Staff.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/model/Staff.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/StaffController.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/StaffController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/StaffDao.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/StaffDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/StaffDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/dao/StaffDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/StaffLoginController.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/controller/StaffLoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/StaffManager.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/StaffManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/service/StaffManagerImpl.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/service/StaffManagerImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/util/Status.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/util/Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ruoque/crm/type/TransportMeans.class" afterPath="$PROJECT_DIR$/target/classes/ruoque/crm/type/TransportMeans.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/errorpage/_404_jsp.class" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/errorpage/_404_jsp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ruoque/crm/controller/StaffLoginController.java" afterPath="$PROJECT_DIR$/src/main/java/ruoque/crm/controller/StaffLoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/errorpage/_404_jsp.java" afterPath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/errorpage/_404_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/crm-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/crm-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="de7a7793-ddad-4882-8c96-102186d6694f" name="Default" comment="change db to postgresql">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ruoque.iws" />
@@ -95,25 +26,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StaffLoginController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StaffLoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ruoque/crm/controller/StaffLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.5424354">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding>
                 <element signature="e#3067#3068#0" expanded="true" />
                 <element signature="e#3088#3089#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15498155">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -221,6 +142,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ruoque" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruoque" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruoque" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruoque" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ruoque" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -577,12 +538,19 @@
       <updated>1442468511713</updated>
       <workItem from="1442468515343" duration="300000" />
       <workItem from="1442474151637" duration="117000" />
-      <workItem from="1442474865259" duration="1957000" />
+      <workItem from="1442474865259" duration="2173000" />
     </task>
+    <task id="LOCAL-00001" summary="change db to postgresql">
+      <created>1442476925993</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1442476925993</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2374000" />
+    <option name="totallyTimeSpent" value="2590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1280" height="974" extended-state="0" />
@@ -620,7 +588,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="change db to postgresql" />
+    <option name="LAST_COMMIT_MESSAGE" value="change db to postgresql" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -709,22 +680,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15498155">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ruoque/crm/controller/StaffLoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.5424354">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
           <folding>
             <element signature="e#3067#3068#0" expanded="true" />
             <element signature="e#3088#3089#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15498155">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
