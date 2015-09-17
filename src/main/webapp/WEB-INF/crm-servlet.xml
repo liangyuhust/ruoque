@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+
+   <context:component-scan base-package="ruoque.crm"/>
+   <!-- 开启注解 -->  
+   <mvc:annotation-driven /> 
+   
+   <bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource"
+        destroy-method="close">
+        <property name="url" value="jdbc:mysql://localhost:3306/ruoque_crm?useUnicode=true&amp;characterEncoding=utf-8" />
+        <property name="username" value="root" />
+        <property name="password" value="" />
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+   </bean>
+
+   <bean id="sessionFactory"
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="datasource" />
+        <property name="hibernateProperties">
+             <props>
+                  <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                  <prop key="hibernate.show_sql">true</prop>
+                  <prop key="hibernate.hbm2ddl.auto">update</prop>
+                  <prop key="hibernate.format_sql">true</prop>
+                  <prop key="hibernate.jdbc.batch_size">100</prop>  
+             </props>
+        </property>
+        <property name="packagesToScan" value="ruoque.crm.model" />
+   </bean>
+ 
+
+   <bean id="transactionManager"
+        class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+   </bean>
+   
+   <tx:annotation-driven transaction-manager="transactionManager"/>
+   
+   <!--静态资源访问-->
+    <mvc:default-servlet-handler/>
+    
+   <!-- 静态资源加载 -->
+   <mvc:resources mapping="/css/**" location="/css/" />
+   <mvc:resources mapping="/images/**" location="/images/" />
+   <mvc:resources mapping="/js/**" location="/js/" />
+   <mvc:resources mapping="/fonts/**" location="/fonts/" />
+     
+   <!-- 视图映射 -->
+   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+       <property name="prefix" value="/WEB-INF/jsp/"/>
+       <property name="suffix" value=".jsp"/>
+   </bean>
+   
+   <!-- Json信息转化 -->
+   <bean id="mappingJacksonHttpMessageConverter"
+		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<value>text/html;charset=UTF-8</value>
+			</list>
+		</property>
+	</bean>
+   
+   <!-- 配置文件上传 -->
+   <bean id="multipartResolver"  
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+       <!-- 默认编码 -->
+       <property name="defaultEncoding" value="utf-8" />  
+       <!-- 文件大小最大值 -->
+       <property name="maxUploadSize" value="10485760000" />  
+       <!-- 内存中的最大值 -->
+       <property name="maxInMemorySize" value="40960" />  
+   </bean>
+  
+
+</beans>

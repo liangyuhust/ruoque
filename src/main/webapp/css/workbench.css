@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+/* CSS Document */
+.myheading{
+    background-color: #333;
+}
+.myfooter{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    color: #767676;
+    text-align: center;
+    border-top:1px solid #e5e5e5;
+}
+.mybody .content{
+	min-height:600px; height:auto!important; height:600px;
+}
+#myPositionMap,#myTraceMap,#myNavigationMap,#myFaultAlertMap,#myInfoServiceMap{
+	min-height:550px; height:auto!important; height:550px;
+}

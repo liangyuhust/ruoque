@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webflow-project-description>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.6.3.201411271034-RELEASE]]></pluginVersion>
+	<configs>
+		<config>
+			<file>src/main/webapp/WEB-INF/test.xml</file>
+			<name><![CDATA[test]]></name>
+			<beans-config><![CDATA[1:BeansModel|2:gps-web|3:src/main/resources/applicationContext.xml]]></beans-config>
+			<beans-config><![CDATA[1:BeansModel|2:gps-web|3:src/main/webapp/WEB-INF/gps-servlet.xml]]></beans-config>
+		</config>
+	</configs>
+</webflow-project-description>

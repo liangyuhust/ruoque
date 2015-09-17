@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ruoque:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ruoque.war">
+      <element id="artifact" artifact-name="ruoque:war exploded" />
+    </root>
+  </artifact>
+</component>
