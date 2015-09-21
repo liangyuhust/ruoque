@@ -32,8 +32,8 @@
       <file leaf-file-name="showWorkBench.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/showWorkBench.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.049242">
-              <caret line="1536" column="72" selection-start-line="1536" selection-start-column="72" selection-end-line="1536" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.54545456">
+              <caret line="1456" column="66" selection-start-line="1456" selection-start-column="66" selection-end-line="1456" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -491,7 +491,7 @@
       <workItem from="1442474865259" duration="5866000" />
       <workItem from="1442799987663" duration="724000" />
       <workItem from="1442802208793" duration="6340000" />
-      <workItem from="1442815699135" duration="816000" />
+      <workItem from="1442815699135" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="change db to postgresql">
       <created>1442476925993</created>
@@ -547,11 +547,17 @@
       <option name="project" value="LOCAL" />
       <updated>1442815888913</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="change workbench">
+      <created>1442816531071</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1442816531071</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14163000" />
+    <option name="totallyTimeSpent" value="14269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1280" height="974" extended-state="0" />
@@ -759,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/showWorkBench.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.049242">
-          <caret line="1536" column="72" selection-start-line="1536" selection-start-column="72" selection-end-line="1536" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.54545456">
+          <caret line="1456" column="66" selection-start-line="1456" selection-start-column="66" selection-end-line="1456" selection-end-column="66" />
           <folding />
         </state>
       </provider>

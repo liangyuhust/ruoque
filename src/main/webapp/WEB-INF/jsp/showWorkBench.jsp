@@ -1130,11 +1130,13 @@
                                     <form class="form-inline">
                                         <div class="form-group">
                                             <label class="sr-only" for="ssOrderDateFrom">订单查询开始日期</label>
-                                            <input type="date" class="form-control" id="ssOrderDateFrom" placeholder="订单查询开始日期">
+                                            <input type="date" class="form-control" id="ssOrderDateFrom"
+                                                   placeholder="订单查询开始日期">
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only" for="ssOrderDateTo">订单查询结束日期</label>
-                                            <input type="date" class="form-control" id="ssOrderDateTo" placeholder="订单查询结束日期">
+                                            <input type="date" class="form-control" id="ssOrderDateTo"
+                                                   placeholder="订单查询结束日期">
                                         </div>
                                         <button type="submit" class="btn btn-default">查询</button>
                                     </form>
