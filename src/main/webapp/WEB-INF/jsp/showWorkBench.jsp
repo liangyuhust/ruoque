@@ -95,12 +95,12 @@
                                         <form class="form-inline">
                                             <div class="form-group">
                                                 <label class="sr-only" for="SearchVisitedDate">来访日期</label>
-                                                <input type="email" class="form-control" id="SearchVisitedDate"
+                                                <input type="date" class="form-control" id="SearchVisitedDate"
                                                        placeholder="来访日期">
                                             </div>
                                             <div class="form-group">
                                                 <label class="sr-only" for="SearchClientName">顾客姓名</label>
-                                                <input type="password" class="form-control" id="SearchClientName"
+                                                <input type="text" class="form-control" id="SearchClientName"
                                                        placeholder="顾客姓名">
                                             </div>
                                             <button type="submit" class="btn btn-default">查询</button>
@@ -439,12 +439,12 @@
                                         <form class="form-inline">
                                             <div class="form-group">
                                                 <label class="sr-only" for="searchCallDate">来电日期</label>
-                                                <input type="email" class="form-control" id="searchCallDate"
+                                                <input type="date" class="form-control" id="searchCallDate"
                                                        placeholder="来电日期">
                                             </div>
                                             <div class="form-group">
                                                 <label class="sr-only" for="searchCallName">顾客姓名</label>
-                                                <input type="password" class="form-control" id="searchCallName"
+                                                <input type="text" class="form-control" id="searchCallName"
                                                        placeholder="顾客姓名">
                                             </div>
                                             <button type="submit" class="btn btn-default">查询</button>
@@ -609,7 +609,7 @@
                                         <form class="form-inline">
                                             <div class="form-group">
                                                 <label class="sr-only" for="searchOrderDate">添加日期</label>
-                                                <input type="email" class="form-control" id="searchHousingDate"
+                                                <input type="date" class="form-control" id="searchHousingDate"
                                                        placeholder="订单日期">
                                             </div>
 
@@ -1130,11 +1130,13 @@
                                     <form class="form-inline">
                                         <div class="form-group">
                                             <label class="sr-only" for="ssOrderDateFrom">订单查询开始日期</label>
-                                            <input type="date" class="form-control" id="ssOrderDateFrom" placeholder="订单查询开始日期">
+                                            <input type="date" class="form-control" id="ssOrderDateFrom"
+                                                   placeholder="订单查询开始日期">
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only" for="ssOrderDateTo">订单查询结束日期</label>
-                                            <input type="date" class="form-control" id="ssOrderDateTo" placeholder="订单查询结束日期">
+                                            <input type="date" class="form-control" id="ssOrderDateTo"
+                                                   placeholder="订单查询结束日期">
                                         </div>
                                         <button type="submit" class="btn btn-default">查询</button>
                                     </form>
@@ -1501,13 +1503,13 @@
                                     <div class="pull-right">
                                         <form class="form-inline">
                                             <div class="form-group">
-                                                <label class="sr-only" for="visitDate">角色ID查询</label>
-                                                <input type="email" class="form-control" id="visitDate"
+                                                <label class="sr-only" for="searchRoleID">角色ID查询</label>
+                                                <input type="email" class="form-control" id="searchRoleID"
                                                        placeholder="角色ID">
                                             </div>
                                             <div class="form-group">
-                                                <label class="sr-only" for="clientName">角色名称查询</label>
-                                                <input type="password" class="form-control" id="clientName"
+                                                <label class="sr-only" for="searchRoleName">角色名称查询</label>
+                                                <input type="password" class="form-control" id="searchRoleName"
                                                        placeholder="角色名称">
                                             </div>
                                             <button type="submit" class="btn btn-default">查询</button>
