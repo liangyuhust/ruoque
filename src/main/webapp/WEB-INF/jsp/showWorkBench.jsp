@@ -49,7 +49,8 @@
                 </div>
                 <div class="tab-pane sale_monitor">
                     <div class="list-group nav">
-                        <a href="#mySaleOrder" class="list-group-item active" data-toggle="tab">购房订单管理</a>
+                        <a href="#myHousing" class="list-group-item active" data-toggle="tab">房源管理</a>
+                        <a href="#mySaleOrder" class="list-group-item" data-toggle="tab">购房订单管理</a>
                         <a href="#mySaleContract" class="list-group-item" data-toggle="tab">购房合同管理</a>
                     </div>
                 </div>
@@ -588,7 +589,143 @@
                 </div>
                 <div class="tab-pane sale_monitor">
                     <div class="tab-content">
-                        <div id="mySaleOrder" class="tab-pane active">
+                        <div id="myHousing" class="tab-pane active">
+                            <ol class="breadcrumb">
+                                <li><a href="#">售房管理</a></li>
+                                <li class="active"><a href="#">房源管理</a></li>
+                            </ol>
+                            <div class="btn-group nav">
+                                <button data-target="#myHousingTable" type="button"
+                                        class="btn btn-item btn-default active" data-toggle="tab">房源列表
+                                </button>
+                                <button data-target="#myHousingNew" type="button" class="btn btn-item btn-default"
+                                        data-toggle="tab">添加房源
+                                </button>
+                            </div>
+                            <div><br/></div>
+                            <div class="tab-content">
+                                <div id="myHousingTable" class="tab-pane table-responsive active">
+                                    <div class="pull-right">
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="searchOrderDate">添加日期</label>
+                                                <input type="email" class="form-control" id="searchHousingDate"
+                                                       placeholder="订单日期">
+                                            </div>
+
+                                            <button type="submit" class="btn btn-default">查询</button>
+                                        </form>
+                                    </div>
+                                    <table class="table table-hover table-condensed ">
+                                        <thead>
+                                        <tr>
+                                            <th>楼号</th>
+                                            <th>单元号</th>
+                                            <th>房号</th>
+                                            <th>建筑面积</th>
+                                            <th>可使用面积</th>
+                                            <th>成交房款</th>
+
+                                            <th>操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="housing_pg">
+                                        </tbody>
+                                    </table>
+                                    <nav class="pull-right">
+                                        <ul class="pagination" id="housingPagination"></ul>
+                                    </nav>
+                                </div>
+                                <div id="myHousingNew" class="tab-pane col-sm-10">
+                                    <form id="myHousingNewForm" class="form-horizontal" action="#">
+                                        <div class="form-group">
+                                            <label for="building" class="col-sm-2 control-label">楼号:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="building"
+                                                       name="building" placeholder="楼号">
+                                            </div>
+                                            <label for="unit" class="col-sm-2 control-label">单元号:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="unit" name="unit"
+                                                       placeholder="单元号">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="room" class="col-sm-2 control-label">房号:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="text" class="form-control" id="room" name="room"
+                                                       placeholder="房号">
+                                            </div>
+                                            <label for="mainRoomArea"
+                                                   class="col-sm-2 control-label">主房面积:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="number" class="form-control" id="mainRoomArea"
+                                                       name="mainRoomArea" min="0" placeholder="主房面积">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="basementArea"
+                                                   class="col-sm-2 control-label">地下室面积:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="number" class="form-control" id="basementArea"
+                                                       name="basementArea" min="0" placeholder="地下室面积">
+                                            </div>
+                                            <label for="gardenArea"
+                                                   class="col-sm-2 control-label">花园面积:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="number" class="form-control" id="gardenArea"
+                                                       name="gardenArea" min="0" placeholder="花园面积">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="availableArea"
+                                                   class="col-sm-2 control-label">可使用面积:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="number" class="form-control" id="availableArea"
+                                                       name="availableArea" min="0" placeholder="可使用面积">
+                                            </div>
+                                            <label for="originalPrice"
+                                                   class="col-sm-2 control-label">原价:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="number" class="form-control" id="originalPrice"
+                                                       name="originalPrice" min="0" placeholder="原价">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="preferentialPrice"
+                                                   class="col-sm-2 control-label">优惠价:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="number" class="form-control"
+                                                       id="preferentialPrice" name="preferentialPrice" min="0"
+                                                       placeholder="优惠价">
+                                            </div>
+                                            <label for="transactionPrice"
+                                                   class="col-sm-2 control-label">成交房款:</label>
+
+                                            <div class="col-sm-4">
+                                                <input type="number" class="form-control" id="transactionPrice"
+                                                       name="transactionPrice" min="0" placeholder="成交房款">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 ">
+                                                <button type="submit" class="btn btn-primary btn-block">提交</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mySaleOrder" class="tab-pane">
                             <ol class="breadcrumb">
                                 <li><a href="#">售房管理</a></li>
                                 <li class="active"><a href="#">购房订单</a></li>
@@ -797,13 +934,13 @@
                                     <div class="pull-right">
                                         <form class="form-inline">
                                             <div class="form-group">
-                                                <label class="sr-only" for="visitDate">签订时间</label>
-                                                <input type="email" class="form-control" id="visitDate"
+                                                <label class="sr-only" for="signContractDate">签约时间</label>
+                                                <input type="email" class="form-control" id="signContractDate"
                                                        placeholder="来访日期">
                                             </div>
                                             <div class="form-group">
-                                                <label class="sr-only" for="clientName">顾客姓名</label>
-                                                <input type="password" class="form-control" id="clientName"
+                                                <label class="sr-only" for="ContractName">顾客姓名</label>
+                                                <input type="password" class="form-control" id="ContractName"
                                                        placeholder="顾客姓名">
                                             </div>
                                             <button type="submit" class="btn btn-default">查询</button>
@@ -916,14 +1053,14 @@
                                 <div class="pull-right">
                                     <form class="form-inline">
                                         <div class="form-group">
-                                            <label class="sr-only" for="visitDate">来访日期</label>
-                                            <input type="email" class="form-control" id="visitDate"
-                                                   placeholder="来访日期">
+                                            <label class="sr-only" for="sVisitDateFrom">来访查询开始日期</label>
+                                            <input type="email" class="form-control" id="sVisitDateFrom"
+                                                   placeholder="来访查询开始日期">
                                         </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="clientName">顾客姓名</label>
-                                            <input type="password" class="form-control" id="clientName"
-                                                   placeholder="顾客姓名">
+                                            <label class="sr-only" for="sVisitDateTo">来访查询结束日期</label>
+                                            <input type="email" class="form-control" id="sVisitDateTo"
+                                                   placeholder="来访查询结束日期">
                                         </div>
                                         <button type="submit" class="btn btn-default">查询</button>
                                     </form>
@@ -954,14 +1091,14 @@
                                 <div class="pull-right">
                                     <form class="form-inline">
                                         <div class="form-group">
-                                            <label class="sr-only" for="visitDate">来访日期</label>
-                                            <input type="email" class="form-control" id="visitDate"
-                                                   placeholder="来访日期">
+                                            <label class="sr-only" for="ssCallDateFrom">来电查询开始日期</label>
+                                            <input type="date" class="form-control" id="ssCallDateFrom"
+                                                   placeholder="来电查询开始日期">
                                         </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="clientName">顾客姓名</label>
-                                            <input type="password" class="form-control" id="clientName"
-                                                   placeholder="顾客姓名">
+                                            <label class="sr-only" for="ssCallDateTo">来电查询结束日期</label>
+                                            <input type="date" class="form-control" id="ssCallDateTo"
+                                                   placeholder="来电查询结束日期">
                                         </div>
                                         <button type="submit" class="btn btn-default">查询</button>
                                     </form>
@@ -992,13 +1129,12 @@
                                 <div class="pull-right">
                                     <form class="form-inline">
                                         <div class="form-group">
-                                            <label class="sr-only" for="visitDate">来访日期</label>
-                                            <input type="email" class="form-control" id="visitDate" placeholder="来访日期">
+                                            <label class="sr-only" for="ssOrderDateFrom">订单查询开始日期</label>
+                                            <input type="date" class="form-control" id="ssOrderDateFrom" placeholder="订单查询开始日期">
                                         </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="clientName">顾客姓名</label>
-                                            <input type="password" class="form-control" id="clientName"
-                                                   placeholder="顾客姓名">
+                                            <label class="sr-only" for="ssOrderDateTo">订单查询结束日期</label>
+                                            <input type="date" class="form-control" id="ssOrderDateTo" placeholder="订单查询结束日期">
                                         </div>
                                         <button type="submit" class="btn btn-default">查询</button>
                                     </form>
@@ -1029,14 +1165,14 @@
                                 <div class="pull-right">
                                     <form class="form-inline">
                                         <div class="form-group">
-                                            <label class="sr-only" for="visitDate">来访日期</label>
-                                            <input type="email" class="form-control" id="visitDate"
-                                                   placeholder="来访日期">
+                                            <label class="sr-only" for="sContactDateFrom">合同查询开始日期</label>
+                                            <input type="date" class="form-control" id="sContactDateFrom"
+                                                   placeholder="合同查询开始日期">
                                         </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="clientName">顾客姓名</label>
-                                            <input type="password" class="form-control" id="clientName"
-                                                   placeholder="顾客姓名">
+                                            <label class="sr-only" for="sContactDateTo">合同查询结束日期</label>
+                                            <input type="date" class="form-control" id="sContactDateTo"
+                                                   placeholder="合同查询结束日期">
                                         </div>
                                         <button type="submit" class="btn btn-default">查询</button>
                                     </form>
