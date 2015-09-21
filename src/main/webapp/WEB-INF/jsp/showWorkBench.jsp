@@ -1217,14 +1217,9 @@
                                     <div class="pull-right">
                                         <form class="form-inline">
                                             <div class="form-group">
-                                                <label class="sr-only" for="visitDate">来访日期</label>
-                                                <input type="email" class="form-control" id="visitDate"
-                                                       placeholder="来访日期">
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="sr-only" for="clientName">顾客姓名</label>
-                                                <input type="password" class="form-control" id="clientName"
-                                                       placeholder="顾客姓名">
+                                                <label class="sr-only" for="searchDepartmentName">部门名称</label>
+                                                <input type="password" class="form-control" id="searchDepartmentName"
+                                                       placeholder="部门名称">
                                             </div>
                                             <button type="submit" class="btn btn-default">查询</button>
                                         </form>
@@ -1340,14 +1335,14 @@
                                     <div class="pull-right">
                                         <form class="form-inline">
                                             <div class="form-group">
-                                                <label class="sr-only" for="visitDate">来访日期</label>
-                                                <input type="email" class="form-control" id="visitDate"
-                                                       placeholder="来访日期">
+                                                <label class="sr-only" for="searchStaffID">员工工号搜索</label>
+                                                <input type="email" class="form-control" id="searchStaffID"
+                                                       placeholder="员工工号查询">
                                             </div>
                                             <div class="form-group">
-                                                <label class="sr-only" for="clientName">顾客姓名</label>
-                                                <input type="password" class="form-control" id="clientName"
-                                                       placeholder="顾客姓名">
+                                                <label class="sr-only" for="searchStaffName">员工姓名</label>
+                                                <input type="password" class="form-control" id="searchStaffName"
+                                                       placeholder="员工姓名查询">
                                             </div>
                                             <button type="submit" class="btn btn-default">查询</button>
                                         </form>
@@ -1506,14 +1501,14 @@
                                     <div class="pull-right">
                                         <form class="form-inline">
                                             <div class="form-group">
-                                                <label class="sr-only" for="visitDate">来访日期</label>
+                                                <label class="sr-only" for="visitDate">角色ID查询</label>
                                                 <input type="email" class="form-control" id="visitDate"
-                                                       placeholder="来访日期">
+                                                       placeholder="角色ID">
                                             </div>
                                             <div class="form-group">
-                                                <label class="sr-only" for="clientName">顾客姓名</label>
+                                                <label class="sr-only" for="clientName">角色名称查询</label>
                                                 <input type="password" class="form-control" id="clientName"
-                                                       placeholder="顾客姓名">
+                                                       placeholder="角色名称">
                                             </div>
                                             <button type="submit" class="btn btn-default">查询</button>
                                         </form>
@@ -1526,7 +1521,7 @@
                                             <th>权限详细信息</th>
                                         </tr>
                                         </thead>
-                                        <tbody id="call_pg">
+                                        <tbody id="role_pg">
                                         </tbody>
                                     </table>
                                     <nav class="pull-right">
