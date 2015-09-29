@@ -28,6 +28,8 @@ public class House {
 
     private BigDecimal afterExtenArea;
 
+    private BigDecimal price;
+
     private String household;
 
     private Date created_at;
@@ -48,6 +50,14 @@ public class House {
         this.building = building;
     }
 
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
+    }
+
     public String getRoom() {
         return room;
     }
@@ -56,12 +66,28 @@ public class House {
         this.room = room;
     }
 
+    public BigDecimal getArea() {
+        return area;
+    }
+
+    public void setArea(BigDecimal area) {
+        this.area = area;
+    }
+
     public BigDecimal getAfterExtenArea() {
         return afterExtenArea;
     }
 
     public void setAfterExtenArea(BigDecimal afterExtenArea) {
         this.afterExtenArea = afterExtenArea;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 
     public String getHousehold() {

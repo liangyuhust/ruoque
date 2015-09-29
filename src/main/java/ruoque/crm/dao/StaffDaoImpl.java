@@ -60,7 +60,7 @@ public class StaffDaoImpl implements StaffDao {
 		String hql = "update Staff s set s.name = ? where s.id = ?";  
 	    Query query = sessionFactory.getCurrentSession().createQuery(hql);  
 	    query.setString(0, staff.getName());  
-	    query.setLong(2, staff.getId());  
+	    query.setLong(1, staff.getId());
 
 	    return (query.executeUpdate() > 0);  
 	}

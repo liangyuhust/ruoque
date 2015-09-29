@@ -33,23 +33,56 @@ public class HouseDaoImpl implements HouseDao {
         return (House)query.uniqueResult();
     }
 
+    @SuppressWarnings("unchecked")
+    @Transactional
     public List<House> getAllHouse() {
-        return null;
+        String hql = "from House";
+        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+
+        return query.list();
     }
 
+    @Transactional
     public Pager<House> getAllHouse(int pageNum, int pageSize) {
-        return null;
+        String hql = "from House";
+        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+        int totalSize=query.list().size();
+        int totalPage=totalSize%pageSize!=0?(totalSize/pageSize+1):(totalSize/pageSize);
+        if(totalPage<1)totalPage=1;
+
+        query.setMaxResults(pageSize);
+        query.setFirstResult((pageNum-1)*pageSize);
+
+        Pager<House> houses= new Pager<House>();
+        List<House> hs=query.list();
+        houses.setDatas(hs);
+        houses.setPageNum(pageNum);
+        houses.setPageSize(pageSize);
+        houses.setTotalPage(totalPage);
+        houses.setTotalSize(totalSize);
+        return houses;
     }
 
+    @Transactional
     public void addHouse(House house) {
-
+        sessionFactory.getCurrentSession().save(house);
     }
 
+    @Transactional
     public boolean delHouse(int id) {
-        return false;
+        String hql = "delete House h where h.id = ?";
+        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+        query.setInteger(0, id);
+
+        return (query.executeUpdate() > 0);
     }
 
+    @Transactional
     public boolean updateHouse(House house) {
-        return false;
+        String hql = "update House h set h.building = ?";
+        Query query = sessionFactory.getCurrentSession().createQuery(hql);
+        query.setString(0, house.getBuilding());
+
+        return (query.executeUpdate() > 0);
     }
 }
