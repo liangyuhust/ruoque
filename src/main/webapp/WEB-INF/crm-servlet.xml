@@ -22,7 +22,7 @@
         <property name="locations">
             <list>
                 <value>classpath*:jdbc.properties</value>
-                <value>classpath*:bcm-monitor-config.properties</value>
+                <value>classpath*:log4j.properties</value>
             </list>
         </property>
         <property name="ignoreResourceNotFound" value="false"/>
